@@ -1,23 +1,18 @@
-<div style="padding: 10px">
-<a href="https://sphere-wallet.onrender.com">
-<div style="display: flex; align-items: center;">
-    <img src="https://sphere-wallet.onrender.com/Logo.svg" alt="Sphere Wallet Logo" height="40">
-    <h1 style="margin-left: 10px;">Sphere - Your Secure Space</h2>
-</div>
-</a>
+
+# 🌐 Sphere - Your Secure Space
 
 👉 Link to Web App: https://sphere-wallet.onrender.com
 
 `Note: App might take some time to load if render marks it inactive.`
 
-Sphere Wallet is a digital wallet for managing USDC <img src="https://sphere-wallet.onrender.com/usdc.svg" alt="EURC" height="20" style="top: 4px; position:relative"> and EURC <img src="https://sphere-wallet.onrender.com/eurc.svg" alt="USDC" height="20" style="top: 4px; position:relative"> tokens.
+Sphere Wallet is a digital wallet for managing USDC and EURC  tokens.
 
-Powered By<a href="https://www.circle.com/en/"><img src="https://sphere-wallet.onrender.com/circle.svg" alt="USDC" height="30" style="top: 10px; position:relative"></a> , it supports wallets on 3 blockchains:
+Powered By <a href="https://www.circle.com/en/">Circle</a> , it supports wallets on 3 blockchains:
 | Blockchain | Wallet Type | Supported Tokens |
 |:-----------------:|:-----------------:|:-----------------:|
-|  Ethereum Sepolia    | SCA    | <img src="https://sphere-wallet.onrender.com/ethereum.svg" alt="ETH" height="20" style="top: 5px; position:relative"> <img src="https://sphere-wallet.onrender.com/usdc.svg" alt="EURC" height="20" style="top: 4px; position:relative"> <img src="https://sphere-wallet.onrender.com/eurc.svg" alt="USDC" height="20" style="top: 4px; position:relative">    |
-|  Avalanche Fuji  | EOA    | <img src="https://sphere-wallet.onrender.com/avalanche.svg" alt="AVAX" height="20" style="top: 5px; position:relative"> <img src="https://sphere-wallet.onrender.com/usdc.svg" alt="EURC" height="20" style="top: 4px; position:relative"> <img src="https://sphere-wallet.onrender.com/eurc.svg" alt="USDC" height="20" style="top: 4px; position:relative">    |
-|    Matic Amoy  | SCA    | <img src="https://sphere-wallet.onrender.com/matic.svg" alt="MATIC" height="20" style="top: 5px; position:relative"> <img src="https://sphere-wallet.onrender.com/usdc.svg" alt="EURC" height="20" style="top: 4px; position:relative">    |
+|  Ethereum Sepolia    | SCA    | <img src="https://sphere-wallet.onrender.com/ethereum.svg" alt="ETH" height="20"> <img src="https://sphere-wallet.onrender.com/usdc.svg" alt="EURC" height="20"> <img src="https://sphere-wallet.onrender.com/eurc.svg" alt="USDC" height="20">    |
+|  Avalanche Fuji  | EOA    | <img src="https://sphere-wallet.onrender.com/avalanche.svg" alt="AVAX" height="20"> <img src="https://sphere-wallet.onrender.com/usdc.svg" alt="EURC" height="20"> <img src="https://sphere-wallet.onrender.com/eurc.svg" alt="USDC" height="20">    |
+|    Matic Amoy  | SCA    | <img src="https://sphere-wallet.onrender.com/matic.svg" alt="MATIC" height="20"> <img src="https://sphere-wallet.onrender.com/usdc.svg" alt="EURC" height="20">    |
 
 
 ## Code Walkthrough:
@@ -99,4 +94,3 @@ along with other dependencies.
     * The server then [`creates a challange for pin update`](/functions/API.js#L109-L116) and responds with the data. Client executes the challange.
 
 * **`Note:`** On each API request, the client also sends the user credential, which is verified everytime to make sure the request is legitimate.
-</div>
