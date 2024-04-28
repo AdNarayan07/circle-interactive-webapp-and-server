@@ -8,7 +8,7 @@ const root = createRoot(domNode);
 root.render(
 <GoogleOAuthProvider clientId="<700574123464-a7hdticirleue0efbt0astfpk2bvtqu6.apps.googleusercontent.com>">
     <React.StrictMode>
-        <img src='./bg.jpg'/>
+        <img alt="background" src='./bg.jpg'/>
         <App />
     </React.StrictMode>
 </GoogleOAuthProvider>

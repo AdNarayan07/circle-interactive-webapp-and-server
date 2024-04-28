@@ -5,7 +5,7 @@ import InitialiseWalletAndPin from './components/initialiseWalletAndPin';
 import CreateNewWallet from './components/createNewWallet';
 import './index.css'
 
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { W3SSdk } from '@circle-fin/w3s-pw-web-sdk'
 
