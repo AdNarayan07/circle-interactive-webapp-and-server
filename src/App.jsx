@@ -84,6 +84,7 @@ const App = () => {
       inputBgDisabled: '#071020',
       recoverPinHint: 'aliceblue'
     })*/
+    sdk.setOnForgotPin(restorePin, true)
     sdk.setAppSettings({ appId })
     sdk.setAuthentication({ userToken, encryptionKey })
 

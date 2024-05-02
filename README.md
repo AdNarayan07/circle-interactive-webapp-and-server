@@ -67,6 +67,7 @@ along with other dependencies.
     - The client makes request to [`/restorePin`](/functions/API.js#L102-L111) endpoint on click of `Restore Pin` Button.
     - The server [creates a challange for pin restoration](/functions/circle-functions.js#L118-L125) and responds with the data.
     - The client executes the challange.
+    - This process also gets triggered when "Forgot Pin?" button is clicked while executing any challange.
 
 ### More Features:
 1. **Signin With Google:**
