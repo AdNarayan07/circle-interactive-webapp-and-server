@@ -28,7 +28,7 @@ const App = () => {
     try {
       setPageLoading(true)
       localStorage.setItem('loginToken', googleUser.credential)
-      const response = await axios.get('https://sphere-wallet.onrender.com/api/validateSignin', { params: { credential: googleUser.credential } })
+      const response = await axios.get('/api/validateSignin', { params: { credential: googleUser.credential } })
       setUser(response.data.profile)
       if (!response.data.initialised) {
         setShowCreateWallet('firstWallet')
@@ -45,7 +45,7 @@ const App = () => {
     const checkLoggedIn = async () => {
       if (localStorage.getItem('loginToken')) {
         try {
-          const response = await axios.get('https://sphere-wallet.onrender.com/api/getUserData', { params: { credential: localStorage.getItem('loginToken') } })
+          const response = await axios.get('/api/getUserData', { params: { credential: localStorage.getItem('loginToken') } })
           setUser(response.data.profile)
           if (!response.data.initialised) {
             setShowCreateWallet('firstWallet')
@@ -140,7 +140,7 @@ const App = () => {
         retrivedData[key] = value;
       }
       setPageLoading(true)
-      const response = await axios.get('https://sphere-wallet.onrender.com/api/' + endpoint, { params: { ...retrivedData, credential: localStorage.getItem('loginToken') } })
+      const response = await axios.get('/api/' + endpoint, { params: { ...retrivedData, credential: localStorage.getItem('loginToken') } })
       executeChallange({ ...response.data, current: false, reloadIfDone })
     } catch (e) {
       alertError(e, endpoint === "initialiseCreatedUser")
@@ -151,7 +151,7 @@ const App = () => {
 
   async function fetchTransactions(date, page) {
     try {
-      const { data } = await axios.get('https://sphere-wallet.onrender.com/api/fetchTransactions', { params: { walletId: activeWallet?.id, date, page, credential: localStorage.getItem('loginToken') } })
+      const { data } = await axios.get('/api/fetchTransactions', { params: { walletId: activeWallet?.id, date, page, credential: localStorage.getItem('loginToken') } })
       return data;
     } catch (e) {
       alertError(e, false)
@@ -160,7 +160,7 @@ const App = () => {
   async function sendTransaction({ destination, amount, tokenId, balance, walletId }) {
     try {
       setPageLoading(true)
-      const response = await axios.get('https://sphere-wallet.onrender.com/api/sendTransaction', { params: { credential: localStorage.getItem('loginToken'), destination, amount, tokenId, walletId } })
+      const response = await axios.get('/api/sendTransaction', { params: { credential: localStorage.getItem('loginToken'), destination, amount, tokenId, walletId } })
       executeChallange({ ...response.data })
     } catch (e) {
       alertError(e, false)
@@ -169,7 +169,7 @@ const App = () => {
   async function changePin() {
     try {
       setPageLoading(true)
-      const response = await axios.get('https://sphere-wallet.onrender.com/api/changePin', { params: { credential: localStorage.getItem('loginToken') } })
+      const response = await axios.get('/api/changePin', { params: { credential: localStorage.getItem('loginToken') } })
       executeChallange({ ...response.data })
     } catch (e) {
       alertError(e, false)
@@ -178,7 +178,7 @@ const App = () => {
   async function restorePin() {
     try {
       setPageLoading(true)
-      const response = await axios.get('https://sphere-wallet.onrender.com/api/restorePin', { params: { credential: localStorage.getItem('loginToken') } })
+      const response = await axios.get('/api/restorePin', { params: { credential: localStorage.getItem('loginToken') } })
       executeChallange({ ...response.data })
     } catch (e) {
       alertError(e, false)
@@ -188,7 +188,7 @@ const App = () => {
   async function fetchTokens() {
     try {
       setPageLoading(true)
-      const response = await axios.get('https://sphere-wallet.onrender.com/api/getTokens', { params: { id: activeWallet?.id, credential: localStorage.getItem('loginToken') } })
+      const response = await axios.get('/api/getTokens', { params: { id: activeWallet?.id, credential: localStorage.getItem('loginToken') } })
       setTokens(response.data.tokenBalances)
       setPageLoading(false)
     } catch (e) {
@@ -199,7 +199,7 @@ const App = () => {
   async function reqData(firstWalletId) {
     try {
       setPageLoading(true)
-      const response = await axios.get('https://sphere-wallet.onrender.com/api/getUserData', { params: { credential: localStorage.getItem('loginToken'), firstWalletId } })
+      const response = await axios.get('/api/getUserData', { params: { credential: localStorage.getItem('loginToken'), firstWalletId } })
       setUser(response.data.profile)
       displayMainData(response.data)
     } catch (e) {
