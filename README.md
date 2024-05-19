@@ -3,7 +3,7 @@
 
 👉 Link to Web App: https://sphere-wallet.glitch.me/
 
-`Note: App might take some time to load if render marks it inactive.`
+`Note: App might take some time to load.`
 
 Sphere Wallet is a digital wallet for managing USDC and EURC  tokens.
 
