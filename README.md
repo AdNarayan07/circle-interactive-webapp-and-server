@@ -1,7 +1,7 @@
 
-# [🌐 Sphere - Your Secure Space](https://sphere-wallet.onrender.com)
+# [🌐 Sphere - Your Secure Space](https://sphere-wallet.glitch.me/)
 
-👉 Link to Web App: https://sphere-wallet.onrender.com
+👉 Link to Web App: https://sphere-wallet.glitch.me/
 
 `Note: App might take some time to load if render marks it inactive.`
 
@@ -10,9 +10,9 @@ Sphere Wallet is a digital wallet for managing USDC and EURC  tokens.
 Powered By <a href="https://www.circle.com/en/">Circle</a> , it supports wallets on 3 blockchains:
 | Blockchain | Wallet Type | Supported Tokens |
 |:-----------------:|:-----------------:|:-----------------:|
-|  Ethereum Sepolia    | SCA    | <img src="https://sphere-wallet.onrender.com/ethereum.svg" alt="ETH" height="20"> <img src="https://sphere-wallet.onrender.com/usdc.svg" alt="EURC" height="20"> <img src="https://sphere-wallet.onrender.com/eurc.svg" alt="USDC" height="20">    |
-|  Avalanche Fuji  | EOA    | <img src="https://sphere-wallet.onrender.com/avalanche.svg" alt="AVAX" height="20"> <img src="https://sphere-wallet.onrender.com/usdc.svg" alt="EURC" height="20"> <img src="https://sphere-wallet.onrender.com/eurc.svg" alt="USDC" height="20">    |
-|    Matic Amoy  | SCA    | <img src="https://sphere-wallet.onrender.com/matic.svg" alt="MATIC" height="20"> <img src="https://sphere-wallet.onrender.com/usdc.svg" alt="EURC" height="20">    |
+|  Ethereum Sepolia    | SCA    | <img src="https://sphere-wallet.glitch.me/ethereum.svg" alt="ETH" height="20"> <img src="https://sphere-wallet.glitch.me/usdc.svg" alt="EURC" height="20"> <img src="https://sphere-wallet.glitch.me/eurc.svg" alt="USDC" height="20">    |
+|  Avalanche Fuji  | EOA    | <img src="https://sphere-wallet.glitch.me/avalanche.svg" alt="AVAX" height="20"> <img src="https://sphere-wallet.glitch.me/usdc.svg" alt="EURC" height="20"> <img src="https://sphere-wallet.glitch.me/eurc.svg" alt="USDC" height="20">    |
+|    Matic Amoy  | SCA    | <img src="https://sphere-wallet.glitch.me/matic.svg" alt="MATIC" height="20"> <img src="https://sphere-wallet.glitch.me/usdc.svg" alt="EURC" height="20">    |
 
 
 ## Code Walkthrough:
